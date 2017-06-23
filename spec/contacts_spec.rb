@@ -1,7 +1,8 @@
 require_relative 'spec_helper'
 require_relative '../lib/contacts.rb'
 
-
+__END__
+SKIP RUBY
 describe "#remove_strawberry" do
   let :contacts do
     {
