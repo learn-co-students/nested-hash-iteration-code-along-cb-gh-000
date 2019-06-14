@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
   # This is the array we will be passing into the remove_strawberry method
   # contacts = {
@@ -14,6 +14,12 @@ require 'pry'
   #   }
   # }
   
-def remove_strawberry(contacts)
+  def remove_strawberry(contacts)
+    contacts.each do |name, facts|
+      facts.each do |fact, value|
+        value.include?("strawberry")
+          value.delete("strawberry")
+      end
+    end
+  end
 
-end
